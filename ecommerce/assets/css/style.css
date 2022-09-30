@@ -1,0 +1,87 @@
+
+
+.wrapper {
+	display: grid;
+	place-items: center;
+	min-height: 400px;
+}
+.slider {
+	width: 100%;
+	position: relative;
+	padding-top: 350px;
+	margin: 20px auto;
+	box-shadow: 0 10px 16px -5px rgb(219 219 219 / 75%);
+}
+.slider>img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider input[name='ani'] {
+	display: none;
+}
+.slider label {
+	margin: 18px 0 0 12px;
+	border: 3px solid #999;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	opacity: 0.6;
+    width: 81px;
+}
+.slider label img {
+    display: block;
+    width: 75px;
+}
+.slider input[name='ani']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+.slider input[name='ani']~img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+.slider input[name='ani']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.accordion {
+    background-color: rgba(250, 250, 250, 0.651);
+    color: #444;
+    cursor: pointer;
+    padding: 6px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+  
+  .accordion:after {
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .accordion.active:after {
+	content: "\2212";
+  }
+  
+  .panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+  }
+  
