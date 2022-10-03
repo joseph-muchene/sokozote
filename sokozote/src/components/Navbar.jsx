@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../sokozote.png";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
@@ -51,21 +52,26 @@ function Navbar() {
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Action
-                    </a>
+                    <Link class="dropdown-item" to="/login">
+                      login
+                    </Link>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Another action
-                    </a>
+                    <Link class="dropdown-item" to="/signup">
+                      Register
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="#">
+                      Profile
+                    </Link>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">
-                      Something else here
+                      logout
                     </a>
                   </li>
                 </ul>
