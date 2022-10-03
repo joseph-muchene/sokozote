@@ -17,7 +17,6 @@ function Login() {
         {/* middle */}
         <div>
           <form className="d-flex justify-content-center flex-column p-2">
-           
             <div class="text-center mb-3">
               <p>Sign In with:</p>
 
@@ -27,10 +26,7 @@ function Login() {
                 </button>
               </div>
             </div>
-            <div className="mb-3 form-group">
-              <label htmlFor="fullName">Full Name</label>
-              <input type="text" className="form-control" />
-            </div>
+
             <div className="mb-3 form-group">
               <label htmlFor="email">Email</label>
               <input type="text" className="form-control" />
@@ -39,14 +35,7 @@ function Login() {
               <label htmlFor="password">password</label>
               <input type="text" className="form-control" name="password" />
             </div>
-            <div className="mb-3 form-group">
-              <label htmlFor="confirmPassword">confirm password</label>
-              <input
-                type="text"
-                className="form-control"
-                name="confirmPassword"
-              />
-            </div>
+
             <div className="mb-3 form-group button">
               <button className="btn w-100">Sign in</button>
             </div>
