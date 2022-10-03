@@ -6,9 +6,9 @@ function Navbar() {
     <>
       <div class="sticky-top bg-white shadow-sm">
         <nav class="navbar navbar-expand-lg navbar-light container">
-          <a class="navbar-brand" href="#">
+          <Link class="navbar-brand" to="/">
             <img src={Logo} alt="Logo" class="logo" />
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -77,10 +77,10 @@ function Navbar() {
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">
+                <Link class="nav-link " to="/cart">
                   <img src="https://img.icons8.com/ios-glyphs/20/dc2e25/shopping-cart--v1.png" />{" "}
                   Cart
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
