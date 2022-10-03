@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.43c61dc2.css",
+    "main.js": "/static/js/main.fb15eb87.js",
+    "static/js/787.ac29e4ab.chunk.js": "/static/js/787.ac29e4ab.chunk.js",
+    "static/media/sokozote.png": "/static/media/sokozote.e3d69bd696195a27abbe.png",
+    "index.html": "/index.html",
+    "main.43c61dc2.css.map": "/static/css/main.43c61dc2.css.map",
+    "main.fb15eb87.js.map": "/static/js/main.fb15eb87.js.map",
+    "787.ac29e4ab.chunk.js.map": "/static/js/787.ac29e4ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43c61dc2.css",
+    "static/js/main.fb15eb87.js"
+  ]
+}
