@@ -50,7 +50,7 @@ function Navbar() {
                   <img src="https://img.icons8.com/external-bearicons-glyph-bearicons/20/dc2e25/external-User-essential-collection-bearicons-glyph-bearicons.png" />{" "}
                   Account
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu p-3" aria-labelledby="navbarDropdown">
                   <li>
                     <Link class="dropdown-item" to="/login">
                       login
@@ -62,7 +62,7 @@ function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link class="dropdown-item" to="#">
+                    <Link class="dropdown-item" to="/profile">
                       Profile
                     </Link>
                   </li>

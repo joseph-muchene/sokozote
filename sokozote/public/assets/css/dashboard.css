@@ -1,0 +1,252 @@
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+.card-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: rgb(241 241 241);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+/*
+ * Sidebar
+ */
+ textarea:focus, input:focus{
+  outline: none;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+.containers{
+  width: 100%;
+  /* height: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  /* border: 1px solid black; */
+}
+
+#display_image{
+  width: 100%;
+  height: 150px;
+  /* border: 1px solid black; */
+  background-position: center;
+  background-size: cover;
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+select,
+.inputs {
+  padding: 5px 11px;
+  font-size: 15px;
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+}.navbar-dark .navbar-nav .nav-link {
+  color: rgb(0 0 0);
+}.w-95 {
+  width: 95%!important;
+}.ml-auto, .mx-auto {
+  margin-left: auto!important;
+}.navbar-dark .navbar-nav .nav-link {
+  color: rgb(0 0 0 / 84%);
+  font-weight: 600;    align-self: center;
+
+  /* text-transform: uppercase; */
+} .navbar-dark
+.justify-content-between  .nav-link {
+  color: rgb(0 0 0 / 84%);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.ml-3 {
+  margin-left: 1.5rem;
+}
+.icon {
+  width: 60px;
+  padding: 11px;
+  border: 6px double #fff4d5;
+  border-radius: 50%;
+}
+
+.styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+label,
+p{
+  font-size: 14px;
+}
+.styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+.styled-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid gainsboro;
+}
+.styled-checkbox:hover + label:before {
+  background: #295ff3;
+}
+.styled-checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.styled-checkbox:checked + label:before {
+  background: #293df3;
+}
+.styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+.styled-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+.h50{
+  height: 50px;
+  object-fit: cover;
+  width: 70px;
+}
+table .inputs {
+  padding: 5px 11px;
+  font-size: 12px;
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+}
+.styled-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}
+
+
+
+select{
+  color: #727272;
+}
+
+.centered {
+  width: 300px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  color: #4571ec;
+}.align-last input
+{
+  height: 100px;
+  width: 100%;
+  border: 2px dotted #a8a8a8;
+  padding: 38px;
+}
+.align-last {
+  text-align-last: center;
+}
+.rounded-0 select{
+  border-radius: 0;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 3px;
+}

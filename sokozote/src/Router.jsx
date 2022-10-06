@@ -5,6 +5,8 @@ import Signup from "./pages/Auth/Signup";
 import Login from "./pages/Auth/Login";
 import Detail from "./pages/Core/Detail";
 import Cart from "./pages/Core/Cart";
+import Dashboard from "./pages/Admin/Dashboard";
+import UserProfile from "./pages/user/UserProfile";
 function Router() {
   return (
     <div>
@@ -15,6 +17,8 @@ function Router() {
           <Route path="/login" element={<Login />} />
           <Route path="/detail" element={<Detail />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/profile" element={<UserProfile/>} />
         </Routes>
       </BrowserRouter>
     </div>
